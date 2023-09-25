@@ -2,11 +2,11 @@ package hu.bme.kszk.inverseCaptcha.plugins
 
 import hu.bme.kszk.inverseCaptcha.ForbiddenException
 import hu.bme.kszk.inverseCaptcha.Util
+import hu.bme.kszk.inverseCaptcha.createAndPostCaptcha
 import hu.bme.kszk.inverseCaptcha.session
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
-import java.security.MessageDigest
 
 
 fun Application.configureRouting() {
@@ -14,7 +14,7 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!")
+            createAndPostCaptcha()
         }
 
         get("/flag") {
@@ -25,5 +25,6 @@ fun Application.configureRouting() {
             }
         }
     }
+
 }
 
