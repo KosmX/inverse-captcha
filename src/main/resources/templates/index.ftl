@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
+    <link href="/static/style.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
 <div>
