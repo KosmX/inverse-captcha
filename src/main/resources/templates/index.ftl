@@ -24,11 +24,10 @@
         <p><code class="codeblock">${chall}</code>
         </p>
         <form action="/" method="post" style="display: flex; align-items: center; justify-content: left">
-            <label for="solution" style="margin: 10px">Solution:</label><br>
-            <input type="text" id="solution" name="solution" class="input" style="margin: 10px"><br>
-            <input type="submit" value="Submit" class="button" style="margin: 10px">
+            <label for="solution" style="margin: 10px">Solution:</label>
+            <input type="text" id="solution" name="solution" class="input" style="margin: 10px" />
+            <input type="submit" value="Submit" class="button" style="margin: 10px" />
         </form>
-        <code></code>
     </div>
     <div class="margin"></div>
 </div>

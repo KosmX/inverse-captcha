@@ -1,13 +1,12 @@
 package hu.bme.kszk.inverseCaptcha
 
 import java.security.MessageDigest
-import kotlin.time.Duration.Companion.days
 import kotlin.time.Duration.Companion.seconds
 
 object Util {
     val flag: String
     val requiredAmount = 64
-    val allowedTime = requiredAmount.seconds
+    val allowedTime = requiredAmount.seconds/2
 
     val delta = 0.00000000001
 

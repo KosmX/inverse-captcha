@@ -1,9 +1,6 @@
 package hu.bme.kszk.inverseCaptcha.plugins
 
-import hu.bme.kszk.inverseCaptcha.ForbiddenException
-import hu.bme.kszk.inverseCaptcha.Util
-import hu.bme.kszk.inverseCaptcha.createAndPostCaptcha
-import hu.bme.kszk.inverseCaptcha.session
+import hu.bme.kszk.inverseCaptcha.*
 import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.response.*
@@ -22,6 +19,10 @@ fun Application.configureRouting() {
         }
         get("/") {
             createAndPostCaptcha()
+        }
+
+        post("/") {
+            verifyAndPost()
         }
 
         get("/flag") {

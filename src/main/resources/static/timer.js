@@ -26,7 +26,7 @@ function clockAction(date) {
 
 /*
  * CTF players,
- * This is just a client-side warning script, the server will enforce the time limit, based on its clock.
+ * This is just a client-side warning script, the server will enforce the time limit based on its clock.
  * Don't waste your time killing this script, you can, but that won't solve the challenge.
  */
 
