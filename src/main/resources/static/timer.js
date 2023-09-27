@@ -17,7 +17,7 @@ function clockAction(date) {
         const now = Date.now(); // current date and time
         const differenceInTime = date - now; // millis until
         if(differenceInTime < 0){
-                location.reload();
+                window.location = window.location.href;
                 return;
         }
 
