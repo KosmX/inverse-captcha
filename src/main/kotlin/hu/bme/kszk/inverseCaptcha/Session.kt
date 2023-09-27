@@ -4,6 +4,7 @@ import hu.bme.kszk.inverseCaptcha.generator.Token
 import io.ktor.server.application.*
 import io.ktor.server.sessions.*
 import io.ktor.util.pipeline.*
+import java.time.Instant
 import java.util.Collections
 import java.util.UUID
 
@@ -15,6 +16,7 @@ data class Session(
 
     val solved: Int = 0,
     val current: Token? = null,
+    val dueTime: Instant = Instant.now(),
 ) {
 
 
