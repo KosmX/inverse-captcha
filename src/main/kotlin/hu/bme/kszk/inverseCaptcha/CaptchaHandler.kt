@@ -39,11 +39,11 @@ suspend fun PipelineContext<Unit, ApplicationCall>.verifyAndPost() = coroutineSc
     }
 
     if (solution == session.current?.result && session.dueTime >= Instant.now()) {
-        session = session.copy(solved = session.solved + 1, current = Generator().generate())
+        session = session.copy(solved = session.solved + 1)
 
         if (session.solved >= Util.requiredAmount) {
             return@coroutineScope call.respondRedirect("/flag")
         }
     }
-    createAndPostCaptcha()
+    createAndPostCaptcha(true)
 }
