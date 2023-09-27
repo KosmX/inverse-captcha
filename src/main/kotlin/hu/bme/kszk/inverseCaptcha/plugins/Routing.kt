@@ -25,6 +25,10 @@ fun Application.configureRouting() {
             verifyAndPost()
         }
 
+        get("/robots.txt") {
+            call.respondRedirect("https://www.smbc-comics.com/comic/captcha")
+        }
+
         get("/flag") {
             if (session.solved >= Util.requiredAmount) {
                 call.respondText("SECURITEAM{${Util.flag}")
