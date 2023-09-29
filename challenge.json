@@ -1,0 +1,9 @@
+{
+  "title": "Inverse CAPTCHA",
+  "flag_qpa": "SECURITEAM{c942fea2e0e3f24d774dece23e4c01b8}",
+  "flag_hacktivity": "SECURITEAM{c942fea2e0e3f24d774dece23e4c01b8}",
+  "short_description": "these are testing for robots",
+  "tags": ["web", "misc"],
+  "level": 1,
+  "points": 150
+}
