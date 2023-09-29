@@ -15,7 +15,7 @@ object Util {
         val md = MessageDigest.getInstance("MD5")
         md.update("1 AM A R0B0T".toByteArray())
         val hash = md.digest().toHex()
-        flag = "SecurITeam{$hash}"
+        flag = "SECURITEAM{$hash}"
     }
 }
 
