@@ -1,4 +1,4 @@
-# Inverse Captcha
+# Inverse CAPTCHA
 
 These CAPTCHAs are getting harder every day, What's the goal of these at all?  
 
