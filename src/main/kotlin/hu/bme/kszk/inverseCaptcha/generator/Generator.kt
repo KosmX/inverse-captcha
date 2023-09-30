@@ -6,7 +6,7 @@ import java.security.SecureRandom
 
 class Generator {
 
-    var depth: Int = 0
+    private var depth: Int = 0
 
     companion object {
         const val MAX_DEPTH = 12

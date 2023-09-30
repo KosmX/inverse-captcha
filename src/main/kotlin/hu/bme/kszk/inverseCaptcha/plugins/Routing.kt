@@ -12,8 +12,8 @@ fun Application.configureRouting() {
 
 
     routing {
-        //staticResources("/static", "static")
-        staticFiles("/static", File("src/main/resources/static")) // TODO change this for release
+        staticResources("/static", "static")
+        //staticFiles("/static", File("src/main/resources/static")) // TODO change this for release
         get("") {
             call.respondRedirect("/")
         }
