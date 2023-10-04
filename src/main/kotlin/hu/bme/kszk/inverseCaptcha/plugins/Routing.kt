@@ -34,7 +34,7 @@ fun Application.configureRouting() {
                 if (session.solved == 69) {
                     call.respondText("Nice!")
                 } else {
-                    call.respondText("SECURITEAM{${Util.flag}")
+                    call.respondText(Util.flag)
                 }
             } else {
                 throw ForbiddenException("ARE YOU A ROBOT?")
